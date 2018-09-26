@@ -154,3 +154,9 @@ client.on('message', msg => {
 		}
 	}
 });
+
+client.on('message', msg => {
+  if (msg.content === '!donsuzkral') {
+    msg.channel.sendMessage('https://www.youtube.com/channel/UCyj3Xf75I17Z1YAp1XHPOOg');
+  }
+});
