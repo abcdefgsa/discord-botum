@@ -13,7 +13,7 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('İşte Davet Linkim: https://discordapp.com/oauth2/authorize?client_id=487197160237170688&scope=bot&permissions=805308478\nBulunduğum Sunucu:https://discord.gg/JSWNAGb');
+    .setDescription('İşte Davet Linkim: https://discordapp.com/oauth2/authorize?client_id=487197160237170688&scope=bot&permissions=805308478');
     return message.author.sendEmbed(pingozel)
 };
 //Bu komutun yapımcısı Mordecai#3303 'dir
