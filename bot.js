@@ -105,7 +105,7 @@ client.login(process.env.BOT_TOKEN);
 
 client.on('message', msg => {
   if (msg.content === '!yenilikler') {
-    msg.channel.sendMessage**!afk**:Afk Moduna Geçersiniz.(Geliştirilecek)\n**!gününşarkısı**:Günün Şarkısını Gösterir.\n**!kurabiye**:Kurabiye Verir.\n**!zekam**:Zekanızı Ölçer.\n**çekiliş**:Çekiliş Yapar.');
+    msg.channel.sendMessage('**!afk**:Afk Moduna Geçersiniz.(Geliştirilecek)\n**!gününşarkısı**:Günün Şarkısını Gösterir.\n**!kurabiye**:Kurabiye Verir.\n**!zekam**:Zekanızı Ölçer.\n**çekiliş**:Çekiliş Yapar.');
   }
 });
 
