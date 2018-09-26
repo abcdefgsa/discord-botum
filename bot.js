@@ -145,9 +145,12 @@ if (message.content === prefix + "kurabiye") {
 }
 });
 
-client.on('message', message => {
-if (message.content === 'sa') {
-message.channel.send("as");
-message.react("👇");
-}
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'sa') {
+		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
+			msg.author.sendMessage('AS');
+		} else {
+		msg.reply('AS');
+		}
+	}
 });
