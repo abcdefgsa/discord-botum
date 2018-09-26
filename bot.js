@@ -102,45 +102,10 @@ client.on('error', e => {
 
 client.login(process.env.BOT_TOKEN);
 
-client.on('message', msg => {
-   if (msg.content.startsWith(prefix + "yak"))  {
-    msg.channel.send ("yak yak 🚬🚬🚬 " , {files: ["./resimler/kaanflix1.png"]});
-
-
-  }
-
-});
-exports.help = {
-  name: 'yak',
-  description: 'Sigara Yakarsınız',
-  usage: 'yak'
-};
-
-
-
-client.on('message', msg => {
-   if (msg.content.startsWith(prefix + "kaanflix"))  {
-    msg.channel.send ("" , {files: ["./resimler/kaanflix3.jpg"]});
-
-
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'köle çalış') {
-    msg.channel.sendMessage('tmm ln kızma');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === '!kırbaç') {
-    msg.channel.sendMessage('ah popom');
-  }
-});
 
 client.on('message', msg => {
   if (msg.content === '!yenilikler') {
-    msg.channel.sendMessage('**!kaanflix**:Kaanflix Fotoğrafı Gösterir.\n**!yak**:Sigara Yakarsınız.\n**!kırbaç**:Botu Kırbaçlarsınız.\n**!afk**:Afk Moduna Geçersiniz.(Geliştirilecek)\n**!gününşarkısı**:Günün Şarkısını Gösterir.\n**!benglobalim**:Dene Ve Gör.\n**!kurabiye**:Kurabiye Verir.\n**!zekam**:Zekanızı Ölçer.\n**çekiliş**:Çekiliş Yapar.');
+    msg.channel.sendMessage**!afk**:Afk Moduna Geçersiniz.(Geliştirilecek)\n**!gününşarkısı**:Günün Şarkısını Gösterir.\n**!kurabiye**:Kurabiye Verir.\n**!zekam**:Zekanızı Ölçer.\n**çekiliş**:Çekiliş Yapar.');
   }
 });
 
@@ -156,13 +121,7 @@ client.on('message', msg => {
   }
 });
 
-client.on('message', msg => {
-   if (msg.content.startsWith(prefix + "benglobalim"))  {
-    msg.channel.send ("G L O B A L L E N D İ N" , {files: ["./resimler/globallendin.jpg"]});
 
-
-  }
-});
 
 client.on('message', message => {
 if (message.content.toLowerCase() === prefix + "zekam") {
