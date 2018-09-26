@@ -160,3 +160,9 @@ client.on('message', msg => {
     msg.channel.sendMessage('https://www.youtube.com/channel/UCyj3Xf75I17Z1YAp1XHPOOg');
   }
 });
+
+client.on('message', msg => {
+  if (msg.content === 'ayşe naber') {
+    msg.channel.sendMessage('iyi senden');
+  }
+});
